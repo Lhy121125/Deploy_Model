@@ -9,3 +9,5 @@ In the root directory of the project, create a virtual environment using the fol
 
 ## Find the GPU using homework 2
 The Find_GPU.ipynb file is used to find the GPU. Follow the command in the notebook to find available GPU.
+At the end of the notebook, a list of available GPU is displayed.
+We will use this to be the accelerator of the model.
