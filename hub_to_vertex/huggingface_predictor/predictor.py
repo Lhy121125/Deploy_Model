@@ -48,7 +48,8 @@ class HuggingFacePredictor(Predictor):
         # except:
         #     logger.info("not correct format")
 
-        encoded_input = self.tokenizer(instances["instances"][0]["sequences"], return_tensors="pt", padding=True, truncation=True)
+        # encoded_input = self.tokenizer(instances["instances"][0]["sequences"], return_tensors="pt", padding=True, truncation=True)
+        encoded_input = self.tokenizer(instances["sequences"], return_tensors="pt", padding=True, truncation=True)
         logger.info(f"Encoded input: {encoded_input}")
         with torch.no_grad():
             # model_output = self.model(**encoded_input, attention_mask=encoded_input["attention_mask"])
