@@ -21,3 +21,7 @@ There are two ipynb jupyter notebook files that are used to deploy the model to 
 deploy the model to Vertex AI.
 - Deploy_model.ipynb -> this deploys the model to Vertex with no accelerator
 - Deploy_model_gpu.ipynb -> this deploys the model to Vertex with accelerator after finding gpu with Find_GPU.ipynb
+
+## Steps to run deploy the model
+1. go to the deploy_model.ipynb and run the commands in the notebook
+2. Follow the instruction one by one and you will be able to deploy the model to Vertex AI
